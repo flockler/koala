@@ -11,9 +11,31 @@ Removed features:
 
 Internal improvements:
 
+ * explicitly require ostruct for ruby >= 3.3.5 ([694](https://github.com/arsduo/koala/pull/694))
+
 Testing improvements:
 
+ * Add ruby 3.4 to CI ([696](https://github.com/arsduo/koala/pull/696))
+
 Others:
+
+v3.6.0 (2024-06-27)
+==========
+
+Updated features:
+
+ * Add fbtrace_id, x-fb-rev, x-fb-debug to error messages and error class ([#668](https://github.com/arsduo/koala/pull/686))
+ * Handles the invalid JSON response from Facebook when the request's http_options[:http_component] is set to ':response' ([#689](https://github.com/arsduo/koala/pull/689))
+
+Internal improvements:
+
+* Require base64 for ruby 3.4 support ([#688](https://github.com/arsduo/koala/pull/688))
+
+Testing improvements:
+
+* Fix CI for ruby 3.4 ([#688](https://github.com/arsduo/koala/pull/688))
+* Add latest rubies to CI ([#687](https://github.com/arsduo/koala/pull/687))
+* Bump GHA action plugins to avoid deprecation warnings ([#689](https://github.com/arsduo/koala/pull/689))
 
 v3.5.0 (2023-08-23)
 ======
